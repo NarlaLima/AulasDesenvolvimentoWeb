@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carros</title>
+    <!-- Adicione o link para o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #343a40;
+            padding: 15px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Cadastro de Carros</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav ml-auto">
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome do Carro:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="cor">Cor:</label>
+                    <input type="text" class="form-control" id="cor" placeholder="Digite a cor">
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <input type="text" class="form-control" id="marca" placeholder="Digite a marca">
+                </div>
+                <div class="form-group">
+                    <label for="cambio">Câmbio:</label>
+                    <select class="form-control" id="cambio">
+                        <option>Manual</option>
+                        <option>Automático</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ano">Ano de Fabricação:</label>
+                    <input type="number" class="form-control" id="ano" placeholder="Digite o ano">
+                </div>
+                <div class="form-group">
+                    <label for="valor">Valor:</label>
+                    <input type="text" class="form-control" id="valor" placeholder="Digite o valor">
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
